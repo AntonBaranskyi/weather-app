@@ -11,7 +11,7 @@ export const InfoIcon = styled.img`
   height: 36px;
 `;
 export const InfoLabel = styled.span`
- font-family: "Courier New", Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   display: flex;
   flex-direction: column;
   font-size: 14px;

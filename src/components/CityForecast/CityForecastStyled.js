@@ -37,9 +37,10 @@ export const InfoWrapper = styled.div`
 
 export const WeatherInfoContainer = styled.div`
   display: flex;
+  justify-content: center;
   width: 90%;
   flex-direction: row;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
   align-items: center;
   flex-wrap: wrap;
 `;
