@@ -13,6 +13,8 @@ import { useSelector } from "react-redux";
 import cloud from "../../assets/316293_clouds_icon.png";
 import wind from "../../assets/wind.svg";
 import sunsetImg from "../../assets/6802392_climate_element_forecast_sun_sunrise_icon.png";
+import rain from "../../assets/9045015_rain_icon.png";
+import fog from "../../assets/2682811_cloud_cloudy_fog_mist_moon_icon.png";
 
 function CityForecast() {
   const { weatherData } = useSelector((state) => state.weather);
@@ -46,8 +48,12 @@ function CityForecast() {
         </TempuratureInfo>
         {general === "Clouds" ? (
           <ImageWeather src={cloud} alt="sun" />
-        ) : (
+        ) : general === "Clear" ? (
           <ImageWeather src={sun} alt="sun" />
+        ) : general === "Rain" ? (
+          <ImageWeather src={rain} alt="rain" />
+        ) : (
+          <ImageWeather src={fog} alt="rain" />
         )}
       </div>
       <CityName>
